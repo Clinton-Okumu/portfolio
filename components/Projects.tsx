@@ -1,22 +1,24 @@
-import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Github, ExternalLink, PlayCircle } from "lucide-react";
+import { Github, PlayCircle } from "lucide-react";
+import Image from "next/image";
 
 const projects = [
   {
     id: 1,
     title: "Resumind",
     subtitle: "AI Resume Analyzer",
-    description: "A platform that utilizes AI to analyze resumes and provide actionable insights on how to improve your resume. Utilizes puterjs for authentication, react and typescript.",
+    description:
+      "A platform that utilizes AI to analyze resumes and provide actionable insights on how to improve your resume. Utilizes puterjs for authentication, react and typescript.",
     image: "/project-1.png",
     github: "https://github.com",
-    demoLink: null,
+    demoLink: "https://demo.com",
   },
   {
     id: 2,
     title: "Carlhub",
     subtitle: "Business Management Software",
-    description: "A platform that enables companies to manage their business operations, including financial, human resources, and marketing. Built with a Python(Django) backend, nextjs frontend and postgresql for the database.",
+    description:
+      "A platform that enables companies to manage their business operations, including financial, human resources, and marketing. Built with a Python(Django) backend, nextjs frontend and postgresql for the database.",
     image: "/project-2.png",
     github: "https://github.com",
     demoLink: "https://demo.com",
@@ -25,37 +27,41 @@ const projects = [
     id: 3,
     title: "Hotel Booking System",
     subtitle: "",
-    description: "A system enabling users to browse available rooms, explore facilities and amenities at Baida Hotel, and process payments. Built with a PHP backend using MySQL and JWT authentication, and an HTML/CSS/Bootstrap frontend with AJAX API integration.",
+    description:
+      "A system enabling users to browse available rooms, explore facilities and amenities at Baida Hotel, and process payments. Built with a PHP backend using MySQL and JWT authentication, and an HTML/CSS/Bootstrap frontend with AJAX API integration.",
     image: "/project-3.png",
     github: "https://github.com",
     demoLink: "https://demo.com",
   },
   {
     id: 4,
-    title: "E-Commerce Platform",
+    title: "Event-Finder",
     subtitle: "Full Stack Application",
-    description: "A comprehensive e-commerce solution with product catalog, shopping cart, payment integration, and admin dashboard. Built with Next.js, Stripe, and MongoDB.",
+    description:
+      "A comprehensive event management platform with event registration, ticketing, and management tools. Built with Golang, Next.js, PostgreSQL, and Paystack for payment integration.",
     image: "/project-1.png",
-    github: "https://github.com",
-    demoLink: null,
+    github: "https://github.com/Clinton-Okumu/event-finder",
+    demoLink: "https://demo.com",
   },
   {
     id: 5,
     title: "Task Management App",
     subtitle: "Productivity Tool",
-    description: "A collaborative task management application with real-time updates, team collaboration features, and progress tracking. Built with React, Firebase, and Tailwind CSS.",
+    description:
+      "A collaborative task management application with real-time updates, team collaboration features, and progress tracking. Built with React, Firebase, and Tailwind CSS.",
     image: "/project-2.png",
     github: "https://github.com",
-    demoLink: null,
+    demoLink: "https://demo.com",
   },
   {
     id: 6,
     title: "Weather Dashboard",
     subtitle: "Data Visualization",
-    description: "An interactive weather dashboard displaying forecasts, historical data, and weather alerts. Built with Next.js, OpenWeather API, and Chart.js for data visualization.",
+    description:
+      "An interactive weather dashboard displaying forecasts, historical data, and weather alerts. Built with Next.js, OpenWeather API, and Chart.js for data visualization.",
     image: "/project-3.png",
     github: "https://github.com",
-    demoLink: null,
+    demoLink: "https://demo.com",
   },
 ];
 
@@ -82,7 +88,9 @@ export default function Projects() {
               <CardHeader>
                 <CardTitle className="text-xl">{project.title}</CardTitle>
                 {project.subtitle && (
-                  <p className="text-sm text-primary font-medium">{project.subtitle}</p>
+                  <p className="text-sm text-primary font-medium">
+                    {project.subtitle}
+                  </p>
                 )}
               </CardHeader>
               <CardContent className="flex-1 flex flex-col">
@@ -107,7 +115,7 @@ export default function Projects() {
                       className="flex items-center gap-2 px-4 py-2 text-sm border rounded-lg hover:bg-muted transition-colors"
                     >
                       <PlayCircle className="w-4 h-4" />
-                      Video Demo
+                      View
                     </a>
                   )}
                 </div>

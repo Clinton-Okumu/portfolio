@@ -1,6 +1,13 @@
-import { Download, Github, Linkedin, Mail, Briefcase, GraduationCap } from "lucide-react";
-import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
+import {
+  Briefcase,
+  Download,
+  Github,
+  GraduationCap,
+  Linkedin,
+  Mail,
+} from "lucide-react";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -44,7 +51,7 @@ export default function About() {
 
             <div className="flex justify-center md:justify-start gap-4 pt-4">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/clinton-okumu-508052281/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-lg border hover:bg-muted transition"
@@ -53,7 +60,7 @@ export default function About() {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/Clinton-Okumu"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-lg border hover:bg-muted transition"
@@ -69,7 +76,14 @@ export default function About() {
           <h2 className="text-3xl font-bold text-center">Get To Know More</h2>
           <h3 className="text-xl text-primary text-center">About Me</h3>
           <p className="text-center text-muted-foreground max-w-3xl mx-auto">
-            Software Engineer with two years of combined experience as an IT Officer and Backend Developer. Skilled in troubleshooting, network maintenance, and strengthening cybersecurity, with expertise in backend development, building efficient APIs, database optimization, and server automation. Committed to delivering quality and innovation, I bring a versatile technical skill set to support impactful projects in organizations focused on continuous improvement and growth.
+            Software Engineer with two years of combined experience as an IT
+            Officer and Backend Developer. Skilled in troubleshooting, network
+            maintenance, and strengthening cybersecurity, with expertise in
+            backend development, building efficient APIs, database optimization,
+            and server automation. Committed to delivering quality and
+            innovation, I bring a versatile technical skill set to support
+            impactful projects in organizations focused on continuous
+            improvement and growth.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
@@ -78,7 +92,9 @@ export default function About() {
                 <Briefcase className="w-12 h-12 text-primary" />
                 <h4 className="text-xl font-semibold">Experience</h4>
                 <p className="text-3xl font-bold text-primary">2+ years</p>
-                <p className="text-muted-foreground text-center">Fullstack Development</p>
+                <p className="text-muted-foreground text-center">
+                  Fullstack Development
+                </p>
               </CardContent>
             </Card>
 
@@ -100,4 +116,3 @@ export default function About() {
     </section>
   );
 }
-

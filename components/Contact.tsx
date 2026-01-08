@@ -37,7 +37,7 @@ export default function Contact() {
             </CardHeader>
             <CardContent>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/clinton-okumu-508052281/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -51,4 +51,3 @@ export default function Contact() {
     </section>
   );
 }
-
