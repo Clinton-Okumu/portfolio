@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Github, PlayCircle } from "lucide-react";
 import Image from "next/image";
@@ -10,8 +11,8 @@ const projects = [
     description:
       "A platform that utilizes AI to analyze resumes and provide actionable insights on how to improve your resume. Utilizes puterjs for authentication, react and typescript.",
     image: "/project-1.png",
-    github: "https://github.com",
-    demoLink: "https://demo.com",
+    github: "https://github.com/Clinton-Okumu/ai-resume-analyzer.git",
+    demoLink: "https://ai-resume-analyzer-five-kappa.vercel.app/",
   },
   {
     id: 2,
@@ -20,7 +21,7 @@ const projects = [
     description:
       "A platform that enables companies to manage their business operations, including financial, human resources, and marketing. Built with a Python(Django) backend, nextjs frontend and postgresql for the database.",
     image: "/project-2.png",
-    github: "https://github.com",
+    github: "https://github.com/calvin-okumu/carlhub-erp",
     demoLink: "https://demo.com",
   },
   {
@@ -30,8 +31,8 @@ const projects = [
     description:
       "A system enabling users to browse available rooms, explore facilities and amenities at Baida Hotel, and process payments. Built with a PHP backend using MySQL and JWT authentication, and an HTML/CSS/Bootstrap frontend with AJAX API integration.",
     image: "/project-3.png",
-    github: "https://github.com",
-    demoLink: "https://demo.com",
+    github: "https://github.com/Clinton-Okumu/baidahotel",
+    demoLink: "https://youtu.be/TLh-DCbgc9c",
   },
   {
     id: 4,
@@ -39,23 +40,23 @@ const projects = [
     subtitle: "Full Stack Application",
     description:
       "A comprehensive event management platform with event registration, ticketing, and management tools. Built with Golang, Next.js, PostgreSQL, and Paystack for payment integration.",
-    image: "/project-1.png",
+    image: "/project-4.png",
     github: "https://github.com/Clinton-Okumu/event-finder",
     demoLink: "https://demo.com",
   },
   {
     id: 5,
-    title: "Task Management App",
+    title: "UburuMultimotive website",
     subtitle: "Productivity Tool",
     description:
-      "A collaborative task management application with real-time updates, team collaboration features, and progress tracking. Built with React, Firebase, and Tailwind CSS.",
-    image: "/project-2.png",
-    github: "https://github.com",
-    demoLink: "https://demo.com",
+      "An NGO that provides safe shelter, warm meals, and the compassionate support needed to help individuals and families move from the streets toward lasting independence. Built with nextjs and tailwind css",
+    image: "/project-5.png",
+    github: "https://github.com/Clinton-Okumu/uburumultimotive",
+    demoLink: "https://uburumultimovehs.org/",
   },
   {
     id: 6,
-    title: "Weather Dashboard",
+    title: "Samaki express system",
     subtitle: "Data Visualization",
     description:
       "An interactive weather dashboard displaying forecasts, historical data, and weather alerts. Built with Next.js, OpenWeather API, and Chart.js for data visualization.",
@@ -125,9 +126,9 @@ export default function Projects() {
         </div>
 
         <div className="text-center">
-          <button className="px-8 py-3 bg-secondary text-secondary-foreground rounded-lg hover:bg-secondary/90 transition-colors font-medium">
-            More Projects
-          </button>
+          <a href="https://github.com/Clinton-Okumu?tab=repositories&type=source">
+            <Button variant={"link"}>More Projects</Button>
+          </a>
         </div>
       </div>
     </section>
