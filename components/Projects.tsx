@@ -60,7 +60,7 @@ const projects = [
     subtitle: "A fish business website",
     description:
       "Samaki Express EA Ltd delivers end-to-end aquaculture solutions, from certified inputs to advisory and logistics. We help farmers grow healthy stock, improve yields, and build sustainable businesses. Built with shadcn, tailwind and nextjs",
-    image: "/project-3.png",
+    image: "/project-6.png",
     github: "https://github.com/Clinton-Okumu/samaki-express",
     demoLink: "https://samaki-express.vercel.app/",
   },
