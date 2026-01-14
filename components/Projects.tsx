@@ -27,7 +27,7 @@ const projects = [
   {
     id: 3,
     title: "Hotel Booking System",
-    subtitle: "",
+    subtitle: "A hotel management system",
     description:
       "A system enabling users to browse available rooms, explore facilities and amenities at Baida Hotel, and process payments. Built with a PHP backend using MySQL and JWT authentication, and an HTML/CSS/Bootstrap frontend with AJAX API integration.",
     image: "/project-3.png",
@@ -37,7 +37,7 @@ const projects = [
   {
     id: 4,
     title: "Event-Finder",
-    subtitle: "Full Stack Application",
+    subtitle: "An event management platform",
     description:
       "A comprehensive event management platform with event registration, ticketing, and management tools. Built with Golang, Next.js, PostgreSQL, and Paystack for payment integration.",
     image: "/project-4.png",
@@ -47,7 +47,7 @@ const projects = [
   {
     id: 5,
     title: "UburuMultimotive website",
-    subtitle: "Productivity Tool",
+    subtitle: "An NGO website",
     description:
       "An NGO that provides safe shelter, warm meals, and the compassionate support needed to help individuals and families move from the streets toward lasting independence. Built with nextjs and tailwind css",
     image: "/project-5.png",
@@ -57,12 +57,12 @@ const projects = [
   {
     id: 6,
     title: "Samaki express system",
-    subtitle: "Data Visualization",
+    subtitle: "A fish business website",
     description:
-      "An interactive weather dashboard displaying forecasts, historical data, and weather alerts. Built with Next.js, OpenWeather API, and Chart.js for data visualization.",
+      "Samaki Express EA Ltd delivers end-to-end aquaculture solutions, from certified inputs to advisory and logistics. We help farmers grow healthy stock, improve yields, and build sustainable businesses. Built with shadcn, tailwind and nextjs",
     image: "/project-3.png",
-    github: "https://github.com",
-    demoLink: "https://demo.com",
+    github: "https://github.com/Clinton-Okumu/samaki-express",
+    demoLink: "https://samaki-express.vercel.app/",
   },
 ];
 
