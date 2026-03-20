@@ -76,14 +76,12 @@ export default function About() {
           <h2 className="text-3xl font-bold text-center">Get To Know More</h2>
           <h3 className="text-xl text-primary text-center">About Me</h3>
           <p className="text-center text-muted-foreground max-w-3xl mx-auto">
-            Software Engineer with two years of combined experience as an IT
-            Officer and Backend Developer. Skilled in troubleshooting, network
-            maintenance, and strengthening cybersecurity, with expertise in
-            backend development, building efficient APIs, database optimization,
-            and server automation. Committed to delivering quality and
-            innovation, I bring a versatile technical skill set to support
-            impactful projects in organizations focused on continuous
-            improvement and growth.
+            Backend-focused Software Engineer with 2+ years of experience building APIs,
+            backend services, and full-stack web applications. Skilled in Go, modern
+            frontend frameworks, and PostgreSQL, with a strong focus on performance,
+            scalability, and clean architecture. Experienced in developing production-ready
+            systems, optimizing databases, and automating workflows, as well as delivering
+            responsive, user-focused web applications end-to-end.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">

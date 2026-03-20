@@ -20,7 +20,7 @@ const projects = [
     subtitle: "Business Management Software",
     description:
       "A platform that enables companies to manage their business operations, including financial, human resources, and marketing. Built with a Python(Django) backend, nextjs frontend and postgresql for the database.",
-    image: "/project-2.png",
+    image: "/carlhub.webp",
     github: "https://github.com/calvin-okumu/carlhub-erp",
     demoLink: "https://demo.com",
   },
@@ -56,13 +56,13 @@ const projects = [
   },
   {
     id: 6,
-    title: "Samaki express system",
-    subtitle: "A fish business website",
+    title: "Urithi mentalwelness center website",
+    subtitle: "A website for a mental welness center",
     description:
-      "Samaki Express EA Ltd delivers end-to-end aquaculture solutions, from certified inputs to advisory and logistics. We help farmers grow healthy stock, improve yields, and build sustainable businesses. Built with shadcn, tailwind and nextjs",
-    image: "/project-6.png",
-    github: "https://github.com/Clinton-Okumu/samaki-express",
-    demoLink: "https://samaki-express.vercel.app/",
+      "Urithi is a mental welness center that provides a safe and supportive environment for individuals to seek help and support. Built with nextjs and tailwind css",
+    image: "/urithimw.webp",
+    github: "https://github.com/Clinton-Okumu/urithimentalwellness",
+    demoLink: "https://urithimentalwellness.com/"
   },
 ];
 
