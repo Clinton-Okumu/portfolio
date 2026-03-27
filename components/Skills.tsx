@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Code2, Database, Wrench, Sparkles } from "lucide-react";
+import { Code2, Database, Smartphone, Sparkles } from "lucide-react";
 
 const skillGroups = [
   {
@@ -15,16 +15,16 @@ const skillGroups = [
     skills: ["Next.js", "TypeScript", "JavaScript", "Tailwind CSS", "React"],
   },
   {
+    title: "Mobile Development",
+    icon: Smartphone,
+    description: "Building native mobile applications for iOS and Android.",
+    skills: ["React Native", "Expo", "Nativewind"]
+  },
+  {
     title: "AI-Assisted Development",
     icon: Sparkles,
     description: "Using AI tools to accelerate development, debugging, and system design.",
-    skills: ["OpenCode", "T3 Code", "Supermaven"],
-  },
-  {
-    title: "Tools & Workflow",
-    icon: Wrench,
-    description: "Development tooling, automation, and engineering workflow.",
-    skills: ["Git", "GitHub", "Linux", "Postman", "n8n"],
+    skills: ["OpenCode", "T3 Code", "Supermaven","Stitch"],
   },
 ];
 
