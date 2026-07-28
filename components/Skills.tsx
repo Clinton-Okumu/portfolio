@@ -18,13 +18,14 @@ const skillGroups = [
     title: "Mobile Development",
     icon: Smartphone,
     description: "Building native mobile applications for iOS and Android.",
-    skills: ["React Native", "Expo", "Nativewind"]
+    skills: ["React Native", "Expo", "Nativewind"],
   },
   {
     title: "AI-Assisted Development",
     icon: Sparkles,
-    description: "Using AI tools to accelerate development, debugging, and system design.",
-    skills: ["OpenCode", "T3 Code", "Supermaven","Stitch"],
+    description:
+      "Using AI tools to accelerate development, debugging, and system design.",
+    skills: ["Pi", "OpenCode", "Claude Code", "Codex", "Antigravity"],
   },
 ];
 
@@ -35,7 +36,8 @@ export default function Skills() {
         <div className="mb-12 text-center">
           <h2 className="text-3xl font-bold sm:text-4xl">Tech Stack</h2>
           <p className="mx-auto mt-3 max-w-2xl text-muted-foreground">
-            Technologies and tools I use to design, build, and ship reliable software.
+            Technologies and tools I use to design, build, and ship reliable
+            software.
           </p>
         </div>
 
