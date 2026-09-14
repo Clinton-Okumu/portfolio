@@ -25,17 +25,24 @@ export default function About() {
           </div>
 
           <div className="text-center md:text-left max-w-xl space-y-4">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border bg-muted/50 text-xs font-medium text-muted-foreground">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+              </span>
+              Available for opportunities
+            </div>
             <p className="text-lg text-muted-foreground">Hello, I'm</p>
-            <h1 className="text-4xl md:text-5xl font-bold">Clinton Okumu</h1>
-            <h2 className="text-xl md:text-2xl text-primary">
-              Full Stack Developer
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Clinton Okumu</h1>
+            <h2 className="text-xl md:text-2xl font-semibold text-primary">
+              Full Stack & Backend Software Engineer
             </h2>
 
             <div className="flex flex-wrap justify-center md:justify-start gap-3 pt-6">
               <a
                 href="/clint-cv.pdf"
                 download
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition shadow-sm"
               >
                 <Download className="w-5 h-5" />
                 Download CV
@@ -72,10 +79,12 @@ export default function About() {
           </div>
         </div>
 
-        <div className="mt-16 space-y-6">
-          <h2 className="text-3xl font-bold text-center">Get To Know More</h2>
-          <h3 className="text-xl text-primary text-center">About Me</h3>
-          <p className="text-center text-muted-foreground max-w-3xl mx-auto">
+        <div className="mt-20 space-y-6">
+          <div className="text-center space-y-2">
+            <h2 className="text-3xl font-bold sm:text-4xl">About Me</h2>
+            <p className="text-muted-foreground">Get to know my journey and focus</p>
+          </div>
+          <p className="text-center text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Backend-focused Software Engineer with 2+ years of experience building APIs,
             backend services, and full-stack web applications. Skilled in Go, modern
             frontend frameworks, and PostgreSQL, with a strong focus on performance,

@@ -8,8 +8,27 @@ import "./globals.css";
 const figtree = Figtree({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Personal Portfolio",
-  description: "Clint Okumu's portfolio",
+  title: "Clinton Okumu | Full Stack & Backend Software Engineer",
+  description:
+    "Portfolio of Clinton Okumu — Backend-focused Software Engineer specializing in Go, PostgreSQL, Python, and Next.js.",
+  keywords: [
+    "Clinton Okumu",
+    "Software Engineer",
+    "Backend Developer",
+    "Full Stack Developer",
+    "Go",
+    "Golang",
+    "PostgreSQL",
+    "Next.js",
+    "React",
+  ],
+  authors: [{ name: "Clinton Okumu" }],
+  openGraph: {
+    title: "Clinton Okumu | Full Stack & Backend Software Engineer",
+    description:
+      "Backend-focused Software Engineer building APIs, scalable systems, and modern web applications.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -18,7 +37,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={figtree.className} suppressHydrationWarning>
+    <html lang="en" className={`${figtree.className} scroll-smooth`} suppressHydrationWarning>
       <head>
         <script
           dangerouslySetInnerHTML={{
