@@ -33,9 +33,11 @@ export default function About() {
               Available for opportunities
             </div>
             <p className="text-lg text-muted-foreground">Hello, I'm</p>
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Clinton Okumu</h1>
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
+              Clinton Okumu
+            </h1>
             <h2 className="text-xl md:text-2xl font-semibold text-primary">
-              Full Stack & Backend Software Engineer
+              Full Stack Developer
             </h2>
 
             <div className="flex flex-wrap justify-center md:justify-start gap-3 pt-6">
@@ -82,15 +84,15 @@ export default function About() {
         <div className="mt-20 space-y-6">
           <div className="text-center space-y-2">
             <h2 className="text-3xl font-bold sm:text-4xl">About Me</h2>
-            <p className="text-muted-foreground">Get to know my journey and focus</p>
+            <p className="text-muted-foreground">
+              Get to know my journey and focus
+            </p>
           </div>
           <p className="text-center text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Backend-focused Software Engineer with 2+ years of experience building APIs,
-            backend services, and full-stack web applications. Skilled in Go, modern
-            frontend frameworks, and PostgreSQL, with a strong focus on performance,
-            scalability, and clean architecture. Experienced in developing production-ready
-            systems, optimizing databases, and automating workflows, as well as delivering
-            responsive, user-focused web applications end-to-end.
+            Fullstack Developer specializing in scalable backend architecture,
+            high-throughput APIs, and modern web applications. 2+ years building
+            production systems with a strong emphasis on database performance,
+            modular design, and reliable end-to-end delivery.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
