@@ -11,8 +11,8 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section id="about" className="py-16 px-6">
-      <div className="mx-auto max-w-6xl">
+    <section id="about" className="py-16">
+      <div className="site-container">
         <div className="flex flex-col items-center gap-10 md:flex-row md:items-center md:justify-center md:gap-16">
           <div className="relative w-64 h-64 md:w-80 md:h-80 shrink-0">
             <Image

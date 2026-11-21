@@ -16,8 +16,8 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-16 px-6">
-      <div className="mx-auto max-w-6xl">
+    <section id="contact" className="py-16">
+      <div className="site-container">
         <div className="text-center space-y-2 mb-12">
           <h2 className="text-3xl font-bold sm:text-4xl">Get in Touch</h2>
           <p className="text-muted-foreground">
@@ -25,7 +25,7 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <Card className="flex flex-col justify-between hover:border-primary/50 transition-colors">
             <CardHeader className="pb-2">
               <CardTitle className="flex items-center gap-2 text-lg">

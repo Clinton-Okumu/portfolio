@@ -10,8 +10,9 @@ interface Project {
   description: string;
   tags: string[];
   image: string;
-  github: string;
+  github?: string;
   demoLink?: string;
+  isMobile?: boolean;
 }
 
 const projects: Project[] = [
@@ -79,12 +80,43 @@ const projects: Project[] = [
     github: "https://github.com/Clinton-Okumu/urithimentalwellness",
     demoLink: "https://urithimentalwellness.com/",
   },
+  {
+    id: 7,
+    title: "BNM Safezone Therapy",
+    subtitle: "Mental Health & Clinical Booking Platform",
+    description:
+      "Full-stack therapy and wellness platform featuring localized KES/USD pricing, multi-channel DPO & M-Pesa payments, clinical booking workflows, and an executive analytics portal.",
+    tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "PHP", "MySQL"],
+    image: "/project-8.png",
+    demoLink: "https://bnmsafezonetherapy.com/",
+  },
+  {
+    id: 8,
+    title: "Good News Mental Space",
+    subtitle: "Wellness & Telehealth Booking Platform",
+    description:
+      "Full-stack mental health and wellness platform serving East Africa and international clients with localized pricing, multi-channel DPO & mobile money payments, and an executive analytics dashboard.",
+    tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "PHP", "MySQL"],
+    image: "/project-7.png",
+    demoLink: "https://goodnewsmentalspace.com/",
+  },
+  {
+    id: 9,
+    title: "PGuard",
+    subtitle: "Android Digital Wellbeing & Content Blocker",
+    description:
+      "Native Android digital wellbeing app and Go REST API featuring on-device content filtering, focus mode, anti-tamper protection, habit streak tracking, and accountability partner verification.",
+    tags: ["Kotlin", "Jetpack Compose", "Android", "Go", "PostgreSQL", "REST API"],
+    image: "/project-9.jpg",
+    github: "https://github.com/Clinton-Okumu/PGuard",
+    isMobile: true,
+  },
 ];
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-16 px-6">
-      <div className="mx-auto max-w-6xl">
+    <section id="projects" className="py-16">
+      <div className="site-container">
         <div className="text-center space-y-2 mb-12">
           <h2 className="text-3xl font-bold sm:text-4xl">Featured Projects</h2>
           <p className="text-muted-foreground">
@@ -95,13 +127,26 @@ export default function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {projects.map((project) => (
             <Card key={project.id} className="overflow-hidden flex flex-col hover:border-primary/50 transition-colors">
-              <div className="relative h-48 w-full bg-muted">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover"
-                />
+              <div className="relative aspect-video w-full bg-muted">
+                {project.isMobile ? (
+                  <div className="flex h-full w-full items-center justify-center bg-gradient-to-b from-muted/60 to-muted p-3">
+                    <div className="relative h-full aspect-[9/19] overflow-hidden rounded-xl border border-border bg-background shadow-md">
+                      <Image
+                        src={project.image}
+                        alt={project.title}
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
+                  </div>
+                ) : (
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover"
+                  />
+                )}
               </div>
               <CardHeader className="pb-3">
                 <CardTitle className="text-xl">{project.title}</CardTitle>
@@ -129,15 +174,17 @@ export default function Projects() {
                   </div>
 
                   <div className="flex gap-2 pt-2 border-t">
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-3 py-1.5 text-sm bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium"
-                    >
-                      <Github className="w-4 h-4" />
-                      Code
-                    </a>
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 px-3 py-1.5 text-sm bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium"
+                      >
+                        <Github className="w-4 h-4" />
+                        Code
+                      </a>
+                    )}
                     {project.demoLink && (
                       <a
                         href={project.demoLink}

@@ -140,3 +140,10 @@
   }
 }
 
+@utility site-container {
+  margin-inline: auto;
+  inline-size: 100%;
+  max-inline-size: 105rem;
+  padding-inline: clamp(1.25rem, 4vw, 4rem);
+}
+

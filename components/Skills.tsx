@@ -18,7 +18,7 @@ const skillGroups = [
     title: "Mobile Development",
     icon: Smartphone,
     description: "Building native mobile applications for iOS and Android.",
-    skills: ["React Native", "Expo", "Nativewind"],
+    skills: ["React Native", "Expo", "Nativewind", "Kotlin"],
   },
   {
     title: "AI-Assisted Development",
@@ -31,8 +31,8 @@ const skillGroups = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="px-6 py-16">
-      <div className="mx-auto max-w-6xl">
+    <section id="skills" className="py-16">
+      <div className="site-container">
         <div className="mb-12 text-center">
           <h2 className="text-3xl font-bold sm:text-4xl">Tech Stack</h2>
           <p className="mx-auto mt-3 max-w-2xl text-muted-foreground">

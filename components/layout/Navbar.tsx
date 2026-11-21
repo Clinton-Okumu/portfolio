@@ -40,7 +40,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky shadow-sm top-0 border-b bg-background/80 backdrop-blur-sm z-50">
-      <nav className="mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
+      <nav className="site-container h-16 flex items-center justify-between">
         <span className="font-bold text-lg">Clinton Okumu</span>
 
         <div className="hidden md:flex items-center gap-6 text-sm">
